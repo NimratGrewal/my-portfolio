@@ -17,20 +17,9 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, title, className, onCli
 
     return (
  
-        <div className={`flex flex-col border-2 border-black dark:border-gray-500 bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl dark:shadow-gray-700 overflow-hidden transform transition-all duration-200 hover:scale-105 hover:border-black dark:hover:border-gray-300  max-w-lg ${className}`}>
+        <div className={`flex flex-col bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl dark:shadow-gray-800 cursor-pointer overflow-hidden transform transition-all duration-300 hover:scale-105 hover:border-black dark:hover:border-gray-300  max-w-lg ${className}`}>
             <div className="w-full h-56 overflow-hidden"><img className="w-full h-full object-cover" src={image} alt={title} /></div>
-            {/* <h2 className="text-2xl font-semibold mt-4 text-black dark:text-white">{title}</h2>
-            <p className="text-gray-600 my-2 dark:text-gray-400">{desc}</p> */}
-            {/* <div className="flex flex-wrap gap-2 mt-2">
-                {tags.map((tag, index) => (
-                    <span
-                        key={index}
-                        className="bg-indigo-600 text-white text-sm font-semibold px-2 py-1 rounded-full dark:bg-indigo-100 dark:text-indigo-600"
-                    >
-                        {tag}
-                    </span>
-                ))}
-            </div> */}
+            
             {/* Content area */}
             <div className="p-6">
                 <h2 className="text-2xl font-semibold text-black dark:text-white mb-4">
@@ -39,8 +28,6 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, title, className, onCli
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                 {desc}
                 </p>
-
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
                     <span
