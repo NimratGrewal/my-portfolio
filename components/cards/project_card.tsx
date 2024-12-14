@@ -17,11 +17,11 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, title, className, onCli
 
     return (
  
-        <div className={`flex flex-col bg-white w-30 dark:bg-gray-800 justify-between rounded-3xl shadow-lg hover:shadow-2xl dark:shadow-gray-700 p-4 transform transition-all duration-200 hover:scale-109 ${className}`}>
-            <img className="rounded-t-lg w-full h-48 object-cover" src={image} alt={title} />
-            <h2 className="text-2xl font-semibold mt-4 text-black dark:text-white">{title}</h2>
-            <p className="text-gray-600 my-2 dark:text-gray-400">{desc}</p>
-            <div className="flex flex-wrap gap-2 mt-2">
+        <div className={`flex flex-col border-2 border-black dark:border-gray-500 bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl dark:shadow-gray-700 overflow-hidden transform transition-all duration-200 hover:scale-105 hover:border-black dark:hover:border-gray-300  max-w-lg ${className}`}>
+            <div className="w-full h-56 overflow-hidden"><img className="w-full h-full object-cover" src={image} alt={title} /></div>
+            {/* <h2 className="text-2xl font-semibold mt-4 text-black dark:text-white">{title}</h2>
+            <p className="text-gray-600 my-2 dark:text-gray-400">{desc}</p> */}
+            {/* <div className="flex flex-wrap gap-2 mt-2">
                 {tags.map((tag, index) => (
                     <span
                         key={index}
@@ -30,6 +30,27 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, title, className, onCli
                         {tag}
                     </span>
                 ))}
+            </div> */}
+            {/* Content area */}
+            <div className="p-6">
+                <h2 className="text-2xl font-semibold text-black dark:text-white mb-4">
+                {title}
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {desc}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2">
+                {tags.map((tag, index) => (
+                    <span
+                    key={index}
+                    className="bg-gradient-to-r from-indigo-500 to-indigo-700 text-white text-sm font-semibold px-2 py-1 rounded-full dark:bg-indigo-100 dark:text-white"
+                    >
+                    {tag}
+                    </span>
+                ))}
+                </div>
             </div>
         </div>
 

@@ -33,7 +33,8 @@ export default function Home() {
           </button>
         </header>
        <main>
-          <div className="mx-auto grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-6 sm:p-6 lg:p-8">
+        <section className="flex justify-center items-center min-h-screen">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-10 sm:p-6 lg:p-8">
           <ProjectCard
               className=""
               onClick={handleClick}
@@ -86,9 +87,8 @@ export default function Home() {
                     image="newicon.png"
                 />
 
-                
-
           </div>
+          </section>
 
        </main>
     </div>
