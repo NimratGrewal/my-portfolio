@@ -41,7 +41,7 @@ export default function Home() {
               title="scriptorium - code editor"
               desc="CRUD web application"
               tags={["React.js", "Next.js","TypeScript", "JavaScript", "Prisma", "Docker", "Tailwind CSS","MVC"]} // Tags array
-              image="newicon.png"
+              image="scriptorium.png"
           />
 
           <ProjectCard
@@ -50,7 +50,7 @@ export default function Home() {
                   title="access connect"
                   desc="AI Chatbot"
                   tags={["Python", "Open AI","LlamaIndex", "Streamlit", "Beautiful Soup"]} // Tags array
-                  image="newicon.png"
+                  image="accessConnect.png"
               />
             <ProjectCard
                     className=""
@@ -67,7 +67,7 @@ export default function Home() {
                     title="iSong"
                     desc="social music sharing desktop application"
                     tags={["Java", "Java Swing","Spotify API", "Clean Architecture", "SOLID design principles"]} // Tags array
-                    image="newicon.png"
+                    image="207_pic.png"
                 />
 
           <ProjectCard
@@ -76,7 +76,7 @@ export default function Home() {
                     title="tetris"
                     desc="play tetris in MIPs assembly code editor"
                     tags={["MIPS Assembly language"]} // Tags array
-                    image="newicon.png"
+                    image="tetris.png"
                 />
             <ProjectCard
                     className=""
@@ -84,7 +84,7 @@ export default function Home() {
                     title="currency converter"
                     desc="real time currency converter"
                     tags={["JavaScript", "JQuery","CSS", "HTML"]} // Tags array
-                    image="newicon.png"
+                    image="currency.png"
                 />
 
           </div>
