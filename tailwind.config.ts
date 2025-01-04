@@ -8,8 +8,11 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
-    extend:{}
-  },
+    extend: {
+      fontFamily: {
+        sans: ["Satoshi", "sans-serif"],
+        // Add more custom font families as needed
+      },
+  }},
   plugins: [],
 } satisfies Config;
