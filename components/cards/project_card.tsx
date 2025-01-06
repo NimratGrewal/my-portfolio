@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, title, cardDetails, cla
             {/* Content area */}
             <div className="">
                 <h2 className="mt-3 lg:text-lg md:text-md sm:text-md font-semibold text-black dark:text-white">
-                {title}
+                {title} 
                 </h2>
                 <div className="flex items-center justify-between mt-2">
 
