@@ -21,18 +21,19 @@ export default function Home() {
   return (
     <>
 
-    <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900 `}>
-        <nav className="p-4 flex justify-between items-center bg-white dark:bg-neutral-900">
-          <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-            Nimrat
+    <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}>
+          <nav className="z-20 flex fixed p-4 w-full bg-opacity-75 backdrop-blur-md justify-between items-center bg-white dark:bg-neutral-900 shadow-md">
+          <h1 className="text-xl font-bold text-gray-800 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
+            @nimrat
           </h1>
           <button
             onClick={toggleDarkMode}
-            className="p-2 font-semibold bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-full"
+            className="p-2 font-semibold bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-full hover:shadow-md transition duration-300"
           >
-            {darkMode ? "lights on" : "lights off"}
+            {darkMode ? "💡" : "🌙"}
           </button>
         </nav>
+
 
        
        <main>
@@ -112,7 +113,7 @@ export default function Home() {
                     </a>
 
                     <a
-          href="https://www.linkedin.com/in/nimrat-grewal-586193193/" // Replace with your LinkedIn URL
+          href="" // Replace with your LinkedIn URL
           target="_blank"
           rel="noopener noreferrer"
           className="mb-2 mt-4 inline-flex items-center rounded-lg bg-orange-500 text-white dark:bg-orange-500 px-6 py-2.5 text-xs font-medium uppercase shadow-lg dark:shadow-gray-700 transition duration-150 ease-in-out hover:shadow-2xl"
@@ -143,7 +144,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="relative">
               <img
-                className="border-4 border-neutral-600 dark:border-neutral-800 h-auto object-cover w-48 sm:w-56 md:w-64 lg:w-80 rounded-full shadow-lg duration-200 transform transition-all  hover:shadow-2xl"
+                className="border-4 border-neutral-600 dark:border-neutral-800 h-auto w-48 sm:w-56 md:w-64 lg:w-80 rounded-full shadow-lg duration-200 transform transition-all  hover:shadow-2xl"
                 src={"nimrat_pic.heic"}
                 alt="Nimrat"
               />
@@ -154,82 +155,204 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-100 dark:bg-neutral-900 py-12">
-        <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-          <h1 className="text-black dark:text-white text-lg font-bold leading-relaxed mb-4">About</h1>
-          <div className="text-black dark:text-white text-lg leading-relaxed">
-            Hi! I'm a third-year <span className="font-semibold text-orange-400">Computer Science</span> student at the University of Toronto with a minor in <span className="font-semibold text-blue-400">Statistics</span>. 
-            <br />
-            I have a passion for:
-            <ul className="list-disc list-inside mt-4 space-y-2">
-              <li>Building user-friendly web applications.</li>
-              <li>Exploring data analytics and machine learning.</li>
-              <li>Learning about scalable and efficient backend systems.</li>
-              <li>Collaborating on open-source projects.</li>
-            </ul>
-            <p className="mt-4">
-              Outside of coding, I enjoy watching movies, hanging out with my friends and exploring new coffee spots.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section className="m-4 mr-6 ml-6 bg-gray-100 dark:bg-neutral-900 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className=" text-black dark:text-white text-lg font-bold leading-relaxed mb-8 lg:mb-0 lg:text-left">Relevant Experience</h1>
-          <div className="mt-8 flex flex-col space-y-8">
-            {/* Experience 1 */}
-            <div className="flex flex-col lg:flex-row items-start">
-              <div className="w-full font-semibold lg:w-1/4 text-gray-600 dark:text-gray-400 lg:text-left">
-                Sept 2024 - April 2025
-              </div>
-              <div className="w-full lg:w-3/4 text-black dark:text-white">
-                <h2 className="font-semibold">Software QA Engineer Intern</h2>
-                <h2 className="text-gray-700 dark:text-gray-400">Ontario Ministry of Education</h2>
-                <ul className="mt-2">
-                  <li>• Perform manual and automated testing for the official Ontario curriculum website, ensuring a seamless experience for <span className="font-semibold text-lime-400">2000000+ annual users</span> on MS Azure Cloud.</li>
-                  <li>• Collaborate with developers on <span className="font-semibold text-pink-400">Azure DevOps</span> to resolve bugs, ensuring a quality user experience for the next release.</li>
-                </ul>
-              </div>
-            </div>
-            {/* Experience 2 */}
-            <div className="flex flex-col lg:flex-row items-start">
-              <div className="w-full font-semibold lg:w-1/4 text-gray-600 dark:text-gray-400 lg:text-left">
-                May 2023 - Sept 2024
-              </div>
-              <div className="w-full lg:w-3/4 text-black dark:text-white">
-                <h2 className="font-semibold">Data Analyst/Quantitative Research Assistant</h2>
-                <h2 className="text-gray-700 dark:text-gray-400">University of Toronto</h2>
-                <ul className="mt-2">
-                  <li>• Led research on Algorithmic Bias and Misinformation in social media, focusing on adverse selection and competition.
-                  </li>
-                <li>• Analyzed news cycle tweet data with <span className="font-semibold text-blue-400">Python</span>,<span className="font-semibold text-orange-400"> Matplotlib</span>, <span className="font-semibold text-indigo-400">Seaborn</span>, and <span className="font-semibold text-yellow-400">Pandas</span>, identifying key patterns between misinformation and non-misinformation tweets that informed the development of sub-hypotheses and testing strategies.</li>
-                <li>• Implemented 50% of sub-hypotheses, providing actionable insights into why misinformation disseminates.</li>
-                <li>• Conducted fixed effects and first-difference regressions in <span className="font-semibold text-rose-400">R</span> to compare engagement modes and identify key predictors
-                of misinformation spread versus high-quality content, validating the main hypothesis.</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="flex flex-col lg:flex-row items-start">
-              <div className="w-full font-semibold lg:w-1/4 text-gray-600 dark:text-gray-400 lg:text-left">
-                Sept 2023 - Dec 2023
-              </div>
-              <div className="w-full lg:w-3/4 text-black dark:text-white">
-                <h2 className="font-semibold">Functional Support Analyst Intern</h2>
-                <h2 className="text-gray-700 dark:text-gray-400">Oracle</h2>
-                <ul className="mt-2">
-                <li>• Boosted team case efficiency by 30% by analyzing and resolving <span className="font-semibold text-red-400">NetSuite software</span> UI accounting-related issues, enhancing product knowledge and user experience.</li>
-                <li>• Facilitated client meetings and resolve concerns in real-time or off-call, achieving a 90% client satisfaction score.</li>
-                <li>• Recognized as the <span className="font-semibold text-cyan-400">best Co-op student</span> in a cohort of 5 for outstanding work, participation, and performance.</li>
-                </ul>
-              </div>
-            </div>
+      <section className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 shadow-md md:max-w-3xl lg:max-w-4xl sm:max-w-2xl">
+        {/* Header */}
+        <div className="flex p-5 rounded-t-xl items-center text-sm bg-neutral-600 text-gray-500">
+          <span className="bg-red-500 h-4 w-4 rounded-full mr-3"></span>
+          <span className="bg-yellow-500 h-4 w-4 rounded-full mr-3"></span>
+          <span className="bg-green-500 h-4 w-4 rounded-full mr-3"></span>
+          
+          <span className="absolute left-1/2 transform -translate-x-1/2 text-neutral-100 text-lg font-semibold">
+          Personal Details
+          </span>
 
           </div>
+
+        {/* <div className="flex p-2 dark:bg-gray-900 bg-gray-300 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] items-center text-sm bg-neutral-600 text-gray-500 mb-4">
+        <span className="text-neutral-300 text-md">
+           nimratg {`>`} personal_details.json
+          </span>
+        </div> */}
+
+        <div className="p-4 pb-6 ">
+        <code className="text-lg font-semibold leading-relaxed"> 
+          <span className="dark:text-blue-400 text-blue-700">const</span>{" "}
+          <span className="text-violet-700 dark:text-yellow-300">nimrat_grewal</span>{" "}
+          <span className="text-gray-600 dark:text-white">=</span>{" "}
+          <span className="dark:text-gray-300 text-gray-600">{"{"}</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">major</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-orange-400 text-orange-600">"Computer Science"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">university</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-orange-400 text-orange-600">"University of Toronto - St. George Campus"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">minor</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-orange-400 text-orange-600">"Statistics"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">year_of_study</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-blue-400 text-blue-700">3</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">current_company</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-orange-400 text-orange-600">"Ontario Ministry of Education"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">location</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="dark:text-orange-400 text-orange-600">"GTA, Canada"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">email</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="text-gray-600 dark:text-white">{`[`}</span>
+          <span className="dark:text-orange-400 text-orange-600">"nimratg.grewal@mail.utoronto.ca"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <span className="dark:text-orange-400 text-orange-600"> "nimratgrewal17@gmail.com"</span>
+          <span className="text-gray-600 dark:text-white">{`]`}</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <br />
+          <span className="ml-4 dark:text-green-400 text-green-700">hobbies</span>
+          <span className="text-gray-600 dark:text-white">: </span>
+          <span className="text-gray-600 dark:text-white">{`[`}</span>
+          <span className="dark:text-orange-400 text-orange-600">"watching movies/tv shows"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <span className="dark:text-orange-400 text-orange-600"> "going to the gym"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <span className="dark:text-orange-400 text-orange-600"> "spending time with my friends"</span>
+          <span className="text-gray-600 dark:text-white">,</span>
+          <span className="dark:text-orange-400 text-orange-600"> "{`shopping :)`}"</span>
+          <span className="text-gray-600 dark:text-white">{`]`}</span>
+          <br></br>
+          <span className="dark:text-gray-300 text-gray-600">{"}"}</span>
+          <br></br>
+          <span className="text-blue-400"> </span>{" "}
+        </code>
+
         </div>
         
-        <div className="flex flex-row items-center mt-4 justify-center">
+
+      </section>
+
+
+      <section className="m-6 bg-gray-100 dark:bg-neutral-900 py-12">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-black dark:text-white text-lg font-bold leading-relaxed mb-8">
+              Relevant Experience
+            </h1>
+            <div className="mt-8 space-y-8">
+              {/* experience */}
+              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
+                  <span className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Sept 2024 - April 2025
+                  </span>
+                </div>
+                {/* details */}
+                <div className="lg:w-3/4 mt-3 lg:mt-0">
+                  <div className="flex items-center space-x-4">
+                    <img src="ontario.jpg" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
+                    <div>
+                      <h2 className="text-black dark:text-white font-semibold text-xl">
+                        Software QA Engineer Intern
+                      </h2>
+                      <h3 className="text-gray-700 dark:text-gray-400 italic">
+                        Ontario Ministry of Education
+                      </h3>
+                    </div>
+                  </div>
+                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                    <li>Perform manual and automated testing for the official Ontario curriculum website, ensuring a seamless experience for <span className="font-semibold text-lime-400">2000000+ annual users</span> on MS Azure Cloud.</li>
+                    <li>Collaborate with developers on <span className="font-semibold text-pink-400">Azure DevOps</span> to resolve bugs, ensuring a quality user experience for the next release.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+              {/* experience */}
+              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
+                  <span className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    May 2023 - Sept 2024
+                  </span>
+                </div>
+                {/* details */}
+                <div className="lg:w-3/4 mt-3 lg:mt-0">
+                  <div className="flex items-center space-x-4">
+                    <img src="toronto.jpg" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
+                    <div>
+                      <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Data Science Intern
+                      </h2>
+                      <h3 className="text-gray-700 dark:text-gray-400 italic">
+                        University of Toronto
+                      </h3>
+                    </div>
+                  </div>
+                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                  <li>Led research on Algorithmic Bias and Misinformation in social media, focusing on adverse selection and competition.
+                  </li>
+                <li>Analyzed news cycle tweet data with <span className="font-semibold text-blue-400">Python</span>,<span className="font-semibold text-orange-400"> Matplotlib</span>, <span className="font-semibold text-indigo-400">Seaborn</span>, and <span className="font-semibold text-yellow-400">Pandas</span>, identifying key patterns between misinformation and non-misinformation tweets that informed the development of sub-hypotheses and testing strategies.</li>
+                <li>Implemented 50% of sub-hypotheses, providing actionable insights into why misinformation disseminates.</li>
+                <li>Conducted fixed effects and first-difference regressions in <span className="font-semibold text-rose-400">R</span> to compare engagement modes and identify key predictors
+                of misinformation spread versus high-quality content, validating the main hypothesis.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
+                  <span className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Sept 2023 - Dec 2023
+                  </span>
+                </div>
+                {/* details */}
+                <div className="lg:w-3/4 mt-3 lg:mt-0">
+                  <div className="flex items-center space-x-4">
+                    <img src="oracle.png" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
+                    <div>
+                      <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Functional Support Analyst Intern
+                      </h2>
+                      <h3 className="text-gray-700 dark:text-gray-400 italic">
+                        Oracle
+                      </h3>
+                    </div>
+                  </div>
+                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                  <li>Boosted team case efficiency by 30% by analyzing and resolving <span className="font-semibold text-red-400">NetSuite software</span> UI accounting-related issues, enhancing product knowledge and user experience.</li>
+                <li>Facilitated client meetings and resolve concerns in real-time or off-call, achieving a 90% client satisfaction score.</li>
+                <li>Recognized as the <span className="font-semibold text-cyan-400">best Co-op student</span> in a cohort of 5 for outstanding work, participation, and performance.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div className="flex flex-row items-center mt-4 justify-center">
 
         <a
           href="https://www.linkedin.com/in/nimrat-grewal-586193193/" // Replace with your LinkedIn URL
@@ -255,6 +378,7 @@ export default function Home() {
 
           </div>
       </section>
+
 
 
         
