@@ -22,13 +22,13 @@ export default function Home() {
     <>
 
     <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}>
-          <nav className="z-20 flex fixed p-4 w-full bg-opacity-75 backdrop-blur-md justify-between items-center bg-white dark:bg-neutral-900 shadow-md">
+          <nav className="z-30 flex fixed p-4 w-full bg-opacity-75 dark:bg-opacity-95 backdrop-blur-md justify-between items-center bg-white dark:bg-neutral-900 shadow-md">
           <h1 className="text-xl font-bold text-gray-800 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
             @nimrat
           </h1>
           <button
             onClick={toggleDarkMode}
-            className="p-2 font-semibold bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-full hover:shadow-md transition duration-300"
+            className="p-2 font-semibold bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-full transition duration-300"
           >
             {darkMode ? "💡" : "🌙"}
           </button>
@@ -39,30 +39,41 @@ export default function Home() {
        <main>
   
 
-      <section className="flex justify-center items-center min-h-screen bg-gray-50 dark:bg-neutral-900">
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-8 items-center max-w-6xl w-full p-6">
+       <section className="flex mb-10 justify-center items-center bg-gray-50 dark:bg-neutral-900">
+        <div className="grid pt-20 sm:grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl w-full p-6 text-center">
           
-          {/* Text Section */}
-          <div className="flex flex-col text-center lg:text-left">
-            <div>
-            <h1 className="text-black dark:text-white text-xl md:text-xl font-bold leading-relaxed">
-              Nimrat Grewal <br />  <br></br>
-              <span className="text-indigo-600 dark:text-indigo-400">
-                Software Engineer. <br></br>
-              </span>
-              <br />
-              Driven to create software solutions.
-            </h1>
+          {/* Image Section */}
+          <div className="flex justify-center">
+            <div className="relative">
+              <img
+                className="h-32 w-32 w-24 rounded-full shadow-lg duration-200 transform transition-all border-4 border-neutral-600 dark:border-neutral-600"
+                src={"nimrat_pic.heic"}
+                alt="Nimrat"
+              />
             </div>
+          </div>
+
+          {/* Text Section */}
+          <div className="mt-6">
+            <h1 className="text-black dark:text-white text-2xl md:text-3xl font-bold leading-relaxed">
+              Nimrat Grewal
+            </h1>
+            <p className="mt-4 text-neutral-600 dark:text-neutral-400 text-base md:text-lg">
+              I'm a passionate Software Engineer, driven to craft innovative software solutions 
+              that make a difference. I specialize in creating efficient and user-focused 
+              applications, with a strong foundation in clean and scalable code.
+            </p>
+          </div>
+
             
-            <div className="mt-8 flex flex-row sm:justify-center md:justify-start lg:justify-start gap-4">
+            <div className="mt-8 flex flex-row justify-center gap-2">
             <a
             href="https://github.com/NimratGrewal" // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
-                    className="mb-2 mt-4 inline-flex rounded-full bg-zinc-700 text-white dark:text-black dark:bg-slate-300 px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-xl transition duration-150 dark:shadow-gray-700 ease-in-out hover:shadow-2xl">
+                    className="mb-2 mt-4 inline-flex rounded-lg text-gray-600 dark:text-white border border-gray-300 dark:border-neutral-600 dark:hover:bg-neutral-900 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 px-6 py-2.5 text-xs font-semibold uppercase leading-normal text-white transition duration-150  ease-in-out">
                     <span className="[&>svg]:h-4 [&>svg]:w-4">
-                        <svg className="text-white dark:text-black"
+                        <svg className="inline-flex text-gray-600 dark:text-white"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
                         viewBox="0 0 496 512">
@@ -74,10 +85,9 @@ export default function Home() {
                     </a>
 
                     <a
-                      href="https://www.linkedin.com/in/nimrat-grewal-586193193/" // Replace with your LinkedIn URL
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mb-2 mt-4 inline-flex items-center rounded-lg bg-zinc-700 text-white dark:text-black dark:bg-slate-300 px-6 py-2.5 text-xs font-medium uppercase dark:text-black shadow-lg dark:shadow-gray-700 transition duration-150 ease-in-out hover:shadow-2xl"
+                      href="accessConnect.png" // Replace with your LinkedIn URL
+                      download
+                      className="mb-2 mt-4 inline-flex text-gray-600 dark:text-white items-center border border-gray-300 dark:border-neutral-600 dark:hover:bg-neutral-900 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 rounded-lg  px-6 py-2.5 text-xs font-semibold uppercase  transition duration-150 ease-in-out"
                     >
                       Download Resume
                       <span className="ml-2">
@@ -86,7 +96,7 @@ export default function Home() {
                           width="16" // Adjust size as needed
                           height="16"
                           viewBox="0 0 24 24"
-                          className="inline-block text-white dark:text-black"
+                          className="text-gray-600 dark:text-white"
                           fill="currentColor"
                         >
                           
@@ -100,13 +110,12 @@ export default function Home() {
                       href="https://www.linkedin.com/in/nimrat-grewal-586193193/" // Replace with your LinkedIn URL
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mb-2 mt-4 inline-block rounded-full bg-blue-500 px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-xl transition duration-150 ease-in-out hover:shadow-2xl dark:shadow-gray-700">                    
+                      className="mb-2 mt-4 inline-block rounded-lg border border-gray-300 dark:border-neutral-600 dark:hover:bg-neutral-900 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 px-6 py-2.5 text-xs font-medium uppercase leading-normal text-gray-300 transition duration-150 ease-in-out dark:shadow-gray-700">                    
                       <span className="[&>svg]:h-4 [&>svg]:w-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  fill="currentColor" width="100" height="100" viewBox="0 0 50 50"
-                          className="text-white"
+                          className="inline-flex text-gray-600 dark:text-white"
                         >
-                          
                           <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" clip-rule="evenodd"></path>
                         </svg>
                       </span>
@@ -116,7 +125,7 @@ export default function Home() {
           href="" // Replace with your LinkedIn URL
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-2 mt-4 inline-flex items-center rounded-lg bg-orange-500 text-white dark:bg-orange-500 px-6 py-2.5 text-xs font-medium uppercase shadow-lg dark:shadow-gray-700 transition duration-150 ease-in-out hover:shadow-2xl"
+          className="mb-2 mt-4 inline-flex items-center text-gray-600 dark:text-white border border-gray-300 dark:border-neutral-600 dark:hover:bg-neutral-900 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 rounded-lg px-6 py-2.5 text-xs font-semibold uppercase transition duration-150 ease-in-out "
         >
           Contact
           <span className="ml-2">
@@ -125,7 +134,7 @@ export default function Home() {
               width="16" // Adjust size as needed
               height="16"
               viewBox="0 0 24 24"
-              className="inline-block text-white"
+              className="inline-block text-gray-600 dark:text-white"
               fill="currentColor"
             >
               
@@ -139,21 +148,11 @@ export default function Home() {
 
 
           </div>
-          
-          {/* Image Section */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <img
-                className="border-4 border-neutral-600 dark:border-neutral-800 h-auto w-48 sm:w-56 md:w-64 lg:w-80 rounded-full shadow-lg duration-200 transform transition-all  hover:shadow-2xl"
-                src={"nimrat_pic.heic"}
-                alt="Nimrat"
-              />
-              <div className="absolute -bottom-3 -right-3 w-10 h-10 bg-neutral-600 dark:bg-neutral-800 rounded-full shadow-md"></div>
-            </div>
-          </div>
-
-        </div>
       </section>
+
+      
+
+
 
 
       <section className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 shadow-md md:max-w-3xl lg:max-w-4xl sm:max-w-2xl">
