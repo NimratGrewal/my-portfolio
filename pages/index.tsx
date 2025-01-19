@@ -400,6 +400,7 @@ export default function Home() {
               tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
               image="scriptorium.png"
               is_deployed={false}
+              website_link=""
               project_link=""
           />
 
@@ -411,6 +412,7 @@ export default function Home() {
                   image="accessConnect.png"
                   is_deployed={false}
                   project_link=""
+                  website_link=""
               />
             <ProjectCard
                     onClick={handleClick}
@@ -420,6 +422,7 @@ export default function Home() {
                     image="newicon.png"
                     is_deployed={true}
                     project_link=""
+                    website_link=""
                 />
 
         <ProjectCard
@@ -430,6 +433,7 @@ export default function Home() {
                     image="207_pic.png"
                     is_deployed={false}
                     project_link="https://github.com/NimratGrewal/207-project"
+                    website_link=""
                 />
 
           <ProjectCard
@@ -440,6 +444,7 @@ export default function Home() {
                     image="tetris.png"
                     is_deployed={false}
                     project_link=""
+                    website_link=""
                 />
             <ProjectCard
                     onClick={handleClick}
@@ -448,7 +453,8 @@ export default function Home() {
                     tags={['JavaScript', 'JQuery', 'CSS', 'HTML']} // Tags array
                     image="currency.png"
                     is_deployed={true}
-                    project_link=""
+                    project_link="https://github.com/NimratGrewal/currency_converter"
+                    website_link="https://nimratgrewal.github.io/currency_converter/"
                 />
 
           </div>

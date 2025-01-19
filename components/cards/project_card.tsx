@@ -19,9 +19,10 @@ interface ProjectInputProps {
     tags: String[];
     is_deployed: boolean;
     project_link:string;
+    website_link:string
 }
 
-const ProjectCard: React.FC<ProjectInputProps> = ({desc, project_link, is_deployed, title, cardDetails, className, onClick, image, tags}) => {
+const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_link, is_deployed, title, cardDetails, className, onClick, image, tags}) => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         onClick(event.target.value);
     };
@@ -108,7 +109,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, project_link, is_deploy
                     </a>
 
                     {is_deployed && <a
-            href={project_link} // Replace with your LinkedIn URL
+            href={website_link} // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
                     className="inline-flex rounded-full dark:text-neutral-800 text-white border dark:border-gray-300 border-neutral-600 hover:bg-neutral-900 dark:bg-gray-100 bg-neutral-800 dark:hover:bg-gray-200 px-6 py-2.5 text-xs font-semibold uppercase leading-normal text-white transition duration-150  ease-in-out">
