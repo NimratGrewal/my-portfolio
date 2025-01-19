@@ -162,8 +162,11 @@ export default function Home() {
           <span className="bg-yellow-500 h-4 w-4 rounded-full mr-3"></span>
           <span className="bg-green-500 h-4 w-4 rounded-full mr-3"></span>
           
-          <span className="absolute left-1/2 transform -translate-x-1/2 text-neutral-100 text-lg font-semibold">
-          Personal Details
+          <span className="absolute flex flex-row gap-3 items-center left-1/2 [&>svg]:h-7 [&>svg]:w-7 transform -translate-x-1/2 text-neutral-100 text-lg font-semibold">
+          
+          <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"></path>
+          </svg> Personal Details
           </span>
 
           </div>
@@ -272,10 +275,10 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
                     <li>Perform manual and automated testing for the official Ontario curriculum website, ensuring a seamless experience for <span className="font-semibold text-lime-400">2000000+ annual users</span> on MS Azure Cloud.</li>
                     <li>Collaborate with developers on <span className="font-semibold text-pink-400">Azure DevOps</span> to resolve bugs, ensuring a quality user experience for the next release.</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
 
@@ -304,14 +307,14 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
                   <li>Led research on Algorithmic Bias and Misinformation in social media, focusing on adverse selection and competition.
                   </li>
                 <li>Analyzed news cycle tweet data with <span className="font-semibold text-blue-400">Python</span>,<span className="font-semibold text-orange-400"> Matplotlib</span>, <span className="font-semibold text-indigo-400">Seaborn</span>, and <span className="font-semibold text-yellow-400">Pandas</span>, identifying key patterns between misinformation and non-misinformation tweets that informed the development of sub-hypotheses and testing strategies.</li>
                 <li>Implemented 50% of sub-hypotheses, providing actionable insights into why misinformation disseminates.</li>
                 <li>Conducted fixed effects and first-difference regressions in <span className="font-semibold text-rose-400">R</span> to compare engagement modes and identify key predictors
                 of misinformation spread versus high-quality content, validating the main hypothesis.</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
 
@@ -338,11 +341,11 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
+                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
                   <li>Boosted team case efficiency by 30% by analyzing and resolving <span className="font-semibold text-red-400">NetSuite software</span> UI accounting-related issues, enhancing product knowledge and user experience.</li>
                 <li>Facilitated client meetings and resolve concerns in real-time or off-call, achieving a 90% client satisfaction score.</li>
                 <li>Recognized as the <span className="font-semibold text-cyan-400">best Co-op student</span> in a cohort of 5 for outstanding work, participation, and performance.</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
 
@@ -393,47 +396,59 @@ export default function Home() {
           <ProjectCard
               onClick={handleClick}
               title="Scriptorium - Code Editor"
-              desc={`A full stack CRUD application where users can create blogs linking to code, write and execute code templates and interact with other users blogs/templates. Collaborated with 2 other members. `}
-              tags="React.js, Next.js, TypeScript, JavaScript, Prisma, Docker, jwt, Tailwind CSS" // Tags array
+              desc={`a full stack CRUD application where users can create blogs linking to code, write and execute code templates through docker and interact with other users blogs/templates. Collaborated with 2 other members. `}
+              tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
               image="scriptorium.png"
+              is_deployed={false}
+              project_link=""
           />
 
           <ProjectCard
                   onClick={handleClick}
                   title="AccessConnect"
-                  desc="Currently working on a web based RAG AI Chatbot for University of Toronto - Scarborough Campus Accessibilty Office with 2 other members."
-                  tags="Python, Open AI, LlamaIndex, RAG, Streamlit, Beautiful Soup" // Tags array
+                  desc="a AI Chatbot for University of Toronto - Scarborough Campus Accessibilty Office."
+                  tags={['Python', 'Open AI', 'LlamaIndex', 'RAG', 'Streamlit', 'Beautiful Soup']}// Tags array
                   image="accessConnect.png"
+                  is_deployed={false}
+                  project_link=""
               />
             <ProjectCard
                     onClick={handleClick}
                     title="Personal Portfolio"
-                    desc="You are currently here!"
-                    tags="React.js, Next.js, TypeScript, Tailwind CSS, Vercel" // Tags array
+                    desc="my personal website which you are currenty on!"
+                    tags={['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']} // Tags array
                     image="newicon.png"
+                    is_deployed={true}
+                    project_link=""
                 />
 
         <ProjectCard
                     onClick={handleClick}
                     title="iSong"
-                    desc="A Java based social music desktop application where users can answer a daily prompt question with songs of thier choice. Collaborated with 3 other members."
-                    tags="Java, OOP, Java Swing, Spotify API, Clean Architecture, SOLID design principles"// Tags array
+                    desc="a Java based social music desktop application where users can answer a daily prompt question with songs of thier choice."
+                    tags={['Java', 'OOP', 'Java Swing', 'Spotify API', 'Clean Architecture', 'SOLID design principles']}// Tags array
                     image="207_pic.png"
+                    is_deployed={false}
+                    project_link="https://github.com/NimratGrewal/207-project"
                 />
 
           <ProjectCard
                     onClick={handleClick}
                     title="Tetris"
-                    desc="Tetris in MIPs assembly code editor visualized via the bitmap display."
-                    tags="MIPS Assembly language" // Tags array
+                    desc="a Tetris game in MIPs assembly code editor visualized via the bitmap display."
+                    tags={["MIPS Assembly language"]} // Tags array
                     image="tetris.png"
+                    is_deployed={false}
+                    project_link=""
                 />
             <ProjectCard
                     onClick={handleClick}
                     title="Currency Converter"
-                    desc="A real time currency converter practice project using a currency conversion API."
-                    tags="JavaScript, JQuery, CSS, HTML" // Tags array
+                    desc="a real time currency converter practice project using a currency conversion API."
+                    tags={['JavaScript', 'JQuery', 'CSS', 'HTML']} // Tags array
                     image="currency.png"
+                    is_deployed={true}
+                    project_link=""
                 />
 
           </div>
