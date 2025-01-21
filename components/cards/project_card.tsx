@@ -83,7 +83,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
         // </div>
 
         <div
-            className={`relative flex flex-col max-w-xl p-6 border-8 dark:border-neutral-600 border-neutral-400 rounded-2xl dark:bg-neutral-800 bg-neutral-200 shadow-lg hover:shadow-xl transition-shadow duration-300 ${className}`}
+            className={`relative flex flex-col max-w-xl p-6 border-8 dark:border-neutral-600 border-gray-400 rounded-2xl dark:bg-neutral-800 bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 ${className}`}
          
         >
             <div className="flex flex-row justify-start gap-4 items-center mb-6 ml-6">
@@ -132,7 +132,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
                 <img
                     src={image}
                     alt={title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full rounded-lg h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
             </div>
 
@@ -146,7 +146,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
                     {tags.map((tag, index) => (
                         <span
                             key={index}
-                            className="px-3 py-1.5 text-sm font-semibold text-neutral-800 dark:text-neutral-100 bg-neutral-300 dark:bg-neutral-700 rounded-lg"
+                            className="px-3 py-1.5 text-sm font-semibold text-gray-800 dark:text-neutral-100 bg-gray-300 dark:bg-neutral-700 rounded-lg"
                             // className="px-4 py-1.5 text-sm bg-neutral-800 text-neutral-200 font-semibold dark:bg-gray-100 dark:text-neutral-800 rounded-full"
                         >
                             {tag}
