@@ -128,11 +128,11 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
             </div>
 
             {/* Image */}
-            <div className="w-full h-56 overflow-hidden relative group">
+            <div className="w-full h-56 shadow-md  overflow-hidden relative group rounded-lg">
                 <img
                     src={image}
                     alt={title}
-                    className="w-full rounded-lg h-full object-cover object-left-top transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover object-left-top duration-300 hover:scale-105"
                 />
             </div>
 

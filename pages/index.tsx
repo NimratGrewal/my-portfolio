@@ -397,7 +397,7 @@ export default function Home() {
               onClick={handleClick}
               title="Scriptorium - Code Editor"
               desc={`a full stack CRUD application where users can create blogs linking to code, write and execute code templates through docker and interact with other users blogs/templates. Collaborated with 2 other members. `}
-              tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
+              tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma ORM', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
               image="script-4.png"
               is_deployed={false}
               website_link=""
