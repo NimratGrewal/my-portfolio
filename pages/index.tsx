@@ -22,7 +22,7 @@ export default function Home() {
     <>
 
     <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}>
-          <nav className="z-30 flex fixed p-4 w-full bg-opacity-75 dark:bg-opacity-95 backdrop-blur-md justify-between items-center bg-white dark:bg-neutral-900 shadow-md">
+          <nav className="z-30 flex fixed p-4 w-full bg-opacity-75 dark:bg-opacity-95 backdrop-blur-md justify-evenly items-center bg-white dark:bg-neutral-900 shadow-md">
           <h1 className="text-xl font-bold text-gray-800 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
             @nimrat
           </h1>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="relative">
               <img
-                className="h-32 w-32 w-24 rounded-full shadow-lg duration-200 transform transition-all border-4 border-neutral-600 dark:border-neutral-600"
+                className="h-40 w-32 w-24 rounded-full shadow-lg duration-200 transform transition-all border-4 border-neutral-600 dark:border-neutral-600"
                 src={"nimrat_pic.heic"}
                 alt="Nimrat"
               />
@@ -248,7 +248,7 @@ export default function Home() {
 
       <section className="m-6 bg-gray-100 dark:bg-neutral-900 py-12">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-black dark:text-white text-lg font-bold leading-relaxed mb-8">
+            <h1 className="text-black uppercase dark:text-white text-lg font-bold leading-relaxed mb-8">
               Relevant Experience
             </h1>
             <div className="mt-8 space-y-8">
@@ -388,15 +388,15 @@ export default function Home() {
         
       <section className="bg-gray-100 dark:bg-neutral-900">
         <div className="flex flex-row justify-center">
-      <h2 className="text-center p-4 text-black dark:text-white text-xl md:text-xl font-bold leading-relaxed m-3 mt-7">
+      <h2 className="text-center p-4 text-black uppercase dark:text-white text-xl md:text-xl font-bold leading-relaxed m-3 mt-7">
       Here are some of my projects...
       </h2></div>
         <section className="flex justify-center items-center min-h-screen !z-20">
           <div className=" grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-14 sm:p-6 lg:p-8">
           <ProjectCard
               onClick={handleClick}
-              title="Scriptorium - Code Editor"
-              desc={`a full stack CRUD application where users can create blogs linking to code, write and execute code templates through docker and interact with other users blogs/templates. Collaborated with 2 other members. `}
+              title="Scriptorium"
+              desc={`a full stack CRUD application where users can create blogs linking to code templates, write and execute isolated code templates through Docker and interact with other users blogs & templates. Collaborated with 2 other members. `}
               tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma ORM', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
               image="script-4.png"
               is_deployed={false}
@@ -407,7 +407,7 @@ export default function Home() {
           <ProjectCard
                   onClick={handleClick}
                   title="AccessConnect"
-                  desc="a AI Chatbot for University of Toronto - Scarborough Campus Accessibilty Office."
+                  desc="a AI Chatbot that gives detailed responses to students with questions about the University of Toronto - Scarborough Campus Accessibilty Office & other departments. Collaborated with 2 other members."
                   tags={['Python', 'Open AI', 'LlamaIndex', 'RAG', 'Streamlit', 'Beautiful Soup']}// Tags array
                   image="access-1.png"
                   is_deployed={false}
@@ -417,7 +417,7 @@ export default function Home() {
             <ProjectCard
                     onClick={handleClick}
                     title="Personal Portfolio"
-                    desc="my personal website which you are currenty on!"
+                    desc="my personal website which you are currenty on! :p"
                     tags={['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']} // Tags array
                     image="port-1.png"
                     is_deployed={true}
@@ -428,7 +428,7 @@ export default function Home() {
         <ProjectCard
                     onClick={handleClick}
                     title="iSong"
-                    desc="a Java based social music desktop application where users can answer a daily prompt question with songs of thier choice."
+                    desc="a Java based social music desktop application where users can answer a daily prompt question with songs of thier choice. Collaborated with 3 other members."
                     tags={['Java', 'OOP', 'Java Swing', 'Spotify API', 'Clean Architecture', 'SOLID design principles']}// Tags array
                     image="isong-1.png"
                     is_deployed={false}
