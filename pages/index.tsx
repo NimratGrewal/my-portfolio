@@ -398,7 +398,7 @@ export default function Home() {
               title="Scriptorium - Code Editor"
               desc={`a full stack CRUD application where users can create blogs linking to code, write and execute code templates through docker and interact with other users blogs/templates. Collaborated with 2 other members. `}
               tags={["React.js", 'Next.js', 'TypeScript', 'JavaScript', 'Prisma', 'Docker', 'jwt', 'Tailwind CSS']} // Tags array
-              image="shotsnapp-1737446600.722.png"
+              image="script-4.png"
               is_deployed={false}
               website_link=""
               project_link=""
@@ -409,7 +409,7 @@ export default function Home() {
                   title="AccessConnect"
                   desc="a AI Chatbot for University of Toronto - Scarborough Campus Accessibilty Office."
                   tags={['Python', 'Open AI', 'LlamaIndex', 'RAG', 'Streamlit', 'Beautiful Soup']}// Tags array
-                  image="accessConnect.png"
+                  image="access-1.png"
                   is_deployed={false}
                   project_link=""
                   website_link=""
@@ -419,7 +419,7 @@ export default function Home() {
                     title="Personal Portfolio"
                     desc="my personal website which you are currenty on!"
                     tags={['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']} // Tags array
-                    image="newicon.png"
+                    image="port-1.png"
                     is_deployed={true}
                     project_link=""
                     website_link=""
@@ -430,7 +430,7 @@ export default function Home() {
                     title="iSong"
                     desc="a Java based social music desktop application where users can answer a daily prompt question with songs of thier choice."
                     tags={['Java', 'OOP', 'Java Swing', 'Spotify API', 'Clean Architecture', 'SOLID design principles']}// Tags array
-                    image="207_pic.png"
+                    image="isong-1.png"
                     is_deployed={false}
                     project_link="https://github.com/NimratGrewal/207-project"
                     website_link=""
@@ -441,7 +441,7 @@ export default function Home() {
                     title="Tetris"
                     desc="a Tetris game in MIPs assembly code editor visualized via the bitmap display."
                     tags={["MIPS Assembly language"]} // Tags array
-                    image="tetris.png"
+                    image="tet-2.png"
                     is_deployed={false}
                     project_link=""
                     website_link=""
@@ -451,7 +451,7 @@ export default function Home() {
                     title="Currency Converter"
                     desc="a real time currency converter practice project using a currency conversion API."
                     tags={['JavaScript', 'JQuery', 'CSS', 'HTML']} // Tags array
-                    image="currency.png"
+                    image="curr-1.png"
                     is_deployed={true}
                     project_link="https://github.com/NimratGrewal/currency_converter"
                     website_link="https://nimratgrewal.github.io/currency_converter/"
