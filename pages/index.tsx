@@ -468,7 +468,8 @@ export default function Home() {
 
        </main>
         <footer className="p-3 text-center text-sm">
-          <div className="text-black dark:text-white">© 2024 Nimrat Grewal. All Rights Reserved.</div>
+          <div className="text-black dark:text-white">Handcrafted by me using React, Typescript and Tailwind CSS.</div>
+          <div className="text-black dark:text-white">© 2025 Nimrat Grewal. All Rights Reserved.</div>
         </footer>
        </div>
     </>
