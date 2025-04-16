@@ -2,8 +2,10 @@ import Image from "next/image";
 import { Geist_Mono } from "next/font/google";
 import ProjectCard from "@/components/cards/project_card";
 import { useState } from "react";
+import Header from "@/components/Header";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-
+console.log("Header component:", Header);
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,20 +24,7 @@ export default function Home() {
     <>
 
     <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}>
-          <nav className="z-30 flex fixed p-4 w-full bg-opacity-75 dark:bg-opacity-95 backdrop-blur-md justify-evenly items-center bg-white dark:bg-neutral-900 shadow-md">
-          <h1 className="text-xl font-bold text-gray-800 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
-            @nimrat
-          </h1>
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 font-semibold bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-full transition duration-300"
-          >
-            {darkMode ? "💡" : "🌙"}
-          </button>
-        </nav>
-
-
-       
+    <Header />
        <main>
   
 
@@ -393,6 +382,16 @@ export default function Home() {
       </h2></div>
         <section className="flex justify-center items-center min-h-screen !z-20">
           <div className=" grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-14 sm:p-6 lg:p-8">
+          <ProjectCard
+              onClick={handleClick}
+              title="Referral Management Platform"
+              desc="Designed to help businesses expand by aggregating social networks, analyzing connection strengths, and recommending leads. Enables users to manage contacts, track referrals, automate follow-ups, and assess relationship strength. Collaborated with 6 other members."
+              tags={["React.js", "Django", "TypeScript", "Python", "Docker", "Tailwind CSS"]}
+              image="/referral.png"
+              is_deployed={false}
+              website_link=""
+              project_link=""
+            />
           <ProjectCard
               onClick={handleClick}
               title="Scriptorium"
