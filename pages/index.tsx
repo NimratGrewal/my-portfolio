@@ -9,6 +9,8 @@ console.log("Header component:", Header);
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const { scrollY } = useScroll();
+  const backgroundOpacity = useTransform(scrollY, [0, 1000], [0.1,0.3]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -16,19 +18,23 @@ export default function Home() {
   };
 
   const handleClick = () => {
-
   }
-
 
   return (
     <>
 
-    <div className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}>
+    <motion.div
+      className={`min-h-screen bg-gray-100 dark:bg-neutral-900`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+    
     <Header />
-       <main>
+       <main className="relative z-10">
   
 
-       <section className="flex mb-10 justify-center items-center bg-gray-50 dark:bg-neutral-900">
+       <section className="flex mb-10 justify-center items-center bg-gray-100 dark:bg-neutral-900">
         <div className="grid pt-20 sm:grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-6xl w-full p-6 text-center">
           
           {/* Image Section */}
@@ -139,11 +145,6 @@ export default function Home() {
           </div>
       </section>
 
-      
-
-
-
-
       <section className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 shadow-md md:max-w-3xl lg:max-w-4xl sm:max-w-2xl">
         {/* Header */}
         <div className="flex p-5 rounded-t-xl items-center text-sm bg-neutral-600 text-gray-500">
@@ -159,12 +160,6 @@ export default function Home() {
           </span>
 
           </div>
-
-        {/* <div className="flex p-2 dark:bg-gray-900 bg-gray-300 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] items-center text-sm bg-neutral-600 text-gray-500 mb-4">
-        <span className="text-neutral-300 text-md">
-           nimratg {`>`} personal_details.json
-          </span>
-        </div> */}
 
         <div className="p-4 pb-6 ">
         <code className="text-lg font-semibold leading-relaxed"> 
@@ -264,10 +259,6 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
-                    <li>Perform manual and automated testing for the official Ontario curriculum website, ensuring a seamless experience for <span className="font-semibold text-lime-400">2000000+ annual users</span> on MS Azure Cloud.</li>
-                    <li>Collaborate with developers on <span className="font-semibold text-pink-400">Azure DevOps</span> to resolve bugs, ensuring a quality user experience for the next release.</li>
-                  </ul> */}
                 </div>
               </div>
 
@@ -296,14 +287,6 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
-                  <li>Led research on Algorithmic Bias and Misinformation in social media, focusing on adverse selection and competition.
-                  </li>
-                <li>Analyzed news cycle tweet data with <span className="font-semibold text-blue-400">Python</span>,<span className="font-semibold text-orange-400"> Matplotlib</span>, <span className="font-semibold text-indigo-400">Seaborn</span>, and <span className="font-semibold text-yellow-400">Pandas</span>, identifying key patterns between misinformation and non-misinformation tweets that informed the development of sub-hypotheses and testing strategies.</li>
-                <li>Implemented 50% of sub-hypotheses, providing actionable insights into why misinformation disseminates.</li>
-                <li>Conducted fixed effects and first-difference regressions in <span className="font-semibold text-rose-400">R</span> to compare engagement modes and identify key predictors
-                of misinformation spread versus high-quality content, validating the main hypothesis.</li>
-                  </ul> */}
                 </div>
               </div>
 
@@ -330,11 +313,6 @@ export default function Home() {
                       </h3>
                     </div>
                   </div>
-                  {/* <ul className="mt-4 list-disc ml-5 text-gray-800 dark:text-gray-200 space-y-2">
-                  <li>Boosted team case efficiency by 30% by analyzing and resolving <span className="font-semibold text-red-400">NetSuite software</span> UI accounting-related issues, enhancing product knowledge and user experience.</li>
-                <li>Facilitated client meetings and resolve concerns in real-time or off-call, achieving a 90% client satisfaction score.</li>
-                <li>Recognized as the <span className="font-semibold text-cyan-400">best Co-op student</span> in a cohort of 5 for outstanding work, participation, and performance.</li>
-                  </ul> */}
                 </div>
               </div>
 
@@ -370,10 +348,6 @@ export default function Home() {
           </div>
       </section>
 
-
-
-        
-      {/* className="relative bg-fixed bg-[radial-gradient(#9ca3af_1px,transparent_1px)] dark:bg-[radial-gradient(#1E293B_1px,transparent_1px)] [background-size:16px_16px]" */}
         
       <section className="bg-gray-100 dark:bg-neutral-900">
         <div className="flex flex-row justify-center">
@@ -462,7 +436,6 @@ export default function Home() {
 
         <section>
 
-
         </section>
 
        </main>
@@ -470,7 +443,7 @@ export default function Home() {
           <div className="text-black dark:text-white">Handcrafted by me using React, Typescript and Tailwind CSS.</div>
           <div className="text-black dark:text-white">© 2025 Nimrat Grewal. All Rights Reserved.</div>
         </footer>
-       </div>
+       </motion.div>
     </>
   );
 };
