@@ -21,10 +21,13 @@ interface ProjectInputProps {
     tags: String[];
     is_deployed: boolean;
     project_link:string;
-    website_link:string
+    website_link:string;
+    demo_link: string;
+    has_demo: boolean;
+    has_source_code_link: boolean;
 }
 
-const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_link, is_deployed, title, cardDetails, className, onClick, image, tags}) => {
+const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, has_source_code_link, project_link, is_deployed, title, has_demo, cardDetails, className, onClick, image, tags, demo_link}) => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         onClick(event.target.value);
     };
@@ -40,7 +43,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
       >
     
             <div className="flex flex-row justify-start gap-4 items-center mb-6 ml-6">
-            <a
+            {has_source_code_link &&<a
             href={project_link} // Replace with your LinkedIn URL
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +62,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
                         </svg>
                     </span>
-                    </a>
+                    </a>}
 
                     {is_deployed && <a
             href={website_link} // Replace with your LinkedIn URL
@@ -71,6 +74,24 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, project_l
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor " className="size-6 inline-flex dark:text-gray-800 text-white">
                         <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
                         </svg> Website
+
+                        <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                        </svg>
+                    </span>
+                    </a>}
+
+                    {has_demo && <a
+            href={demo_link} // Replace with your LinkedIn URL
+            target="_blank"
+            rel="noopener noreferrer"
+                    className="inline-flex rounded-full dark:text-neutral-800 text-white border dark:border-gray-300 border-neutral-600 hover:bg-neutral-900 dark:bg-gray-100 bg-neutral-800 dark:hover:bg-gray-200 px-6 py-2.5 text-xs font-semibold uppercase leading-normal text-white transition duration-150  ease-in-out">
+                    <span className="flex gap-2 [&>svg]:h-4 [&>svg]:w-4">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 inline-flex dark:text-gray-800 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+                        </svg>
+                        Demo
 
                         <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>

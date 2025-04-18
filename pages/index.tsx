@@ -80,7 +80,7 @@ export default function Home() {
                     </a>
 
                     <a
-                      href="accessConnect.png" // Replace with your LinkedIn URL
+                      href="Nimrat_Grewal_Resume_April2025.pdf" // Replace with your LinkedIn URL
                       download
                       className="mb-2 mt-4 inline-flex text-gray-600 dark:text-white items-center border border-gray-300 dark:border-neutral-600 dark:hover:bg-neutral-900 bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 rounded-lg  px-6 py-2.5 text-xs font-semibold uppercase  transition duration-150 ease-in-out"
                     >
@@ -243,6 +243,32 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
+                    May 2025 - Present
+                  </span>
+                </div>
+                {/* details */}
+                <div className="lg:w-3/4 mt-3 lg:mt-0">
+                  <div className="flex items-center space-x-4">
+                    <img src="veeva.png" alt="Veeva Systems Logo" className="w-10 h-10 rounded-full shadow-md"/>
+                    <div>
+                      <h2 className="text-black dark:text-white font-semibold text-xl">
+                        Software Engineer Intern
+                      </h2>
+                      <h3 className="text-gray-700 dark:text-gray-400 italic">
+                        Veeva Systems
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="flex flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
+                  <span className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
                     Sept 2024 - April 2025
                   </span>
                 </div>
@@ -277,10 +303,10 @@ export default function Home() {
                 {/* details */}
                 <div className="lg:w-3/4 mt-3 lg:mt-0">
                   <div className="flex items-center space-x-4">
-                    <img src="toronto.jpg" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
+                    <img src="toronto.jpg" alt="Unversity of Toronto Logo" className="w-10 h-10 rounded-full shadow-md"/>
                     <div>
                       <h2 className="text-black dark:text-white font-semibold text-xl">
-                      Data Science Intern
+                      Data Science Research Assistant
                       </h2>
                       <h3 className="text-gray-700 dark:text-gray-400 italic">
                         University of Toronto
@@ -359,12 +385,15 @@ export default function Home() {
           <ProjectCard
               onClick={handleClick}
               title="Referral Management Platform"
-              desc="Designed to help businesses expand by aggregating social networks, analyzing connection strengths, and recommending leads. Enables users to manage contacts, track referrals, automate follow-ups, and assess relationship strength. Collaborated with 6 other members."
-              tags={["React.js", "Django", "TypeScript", "Python", "Docker", "Tailwind CSS"]}
+              desc="designed to help businesses expand by aggregating social networks, analyzing connection strengths, and recommending leads. Enables users to manage contacts, track referrals, automate follow-ups, and assess relationship strength. Collaborated with 6 other members."
+              tags={["React.js", "Django", "TypeScript", "Python", "Docker", "Tailwind CSS", "Material UI"]}
               image="/referral.png"
               is_deployed={false}
               website_link=""
               project_link=""
+              demo_link="https://drive.google.com/drive/folders/1vPP-dmmc6Qv-UlVzycat9WTXPBsCI8xm?usp=share_link"
+              has_demo={true}
+              has_source_code_link={false}
             />
           <ProjectCard
               onClick={handleClick}
@@ -374,7 +403,10 @@ export default function Home() {
               image="script-4.png"
               is_deployed={false}
               website_link=""
-              project_link=""
+              project_link="https://github.com/NimratGrewal/Scriptorium"
+              demo_link=""
+              has_demo={false}
+              has_source_code_link={true}
           />
 
           <ProjectCard
@@ -384,8 +416,11 @@ export default function Home() {
                   tags={['Python', 'Open AI', 'LlamaIndex', 'RAG', 'Streamlit', 'Beautiful Soup']}// Tags array
                   image="access-1.png"
                   is_deployed={false}
-                  project_link=""
+                  project_link="https://github.com/NimratGrewal/AccessConnect"
                   website_link=""
+                  demo_link="https://drive.google.com/drive/folders/1r4TSR7vFAEoyeY9ZiuFJrGsGbqAr9d6G?usp=share_link"
+                  has_demo={true}
+                  has_source_code_link={true}
               />
             <ProjectCard
                     onClick={handleClick}
@@ -393,9 +428,12 @@ export default function Home() {
                     desc="my personal website which you are currenty on! :p"
                     tags={['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel']} // Tags array
                     image="port-1.png"
-                    is_deployed={true}
-                    project_link=""
+                    is_deployed={false}
+                    project_link="https://github.com/NimratGrewal/my-portfolio"
                     website_link=""
+                    demo_link=""
+                    has_demo={false}
+                  has_source_code_link={true}
                 />
 
         <ProjectCard
@@ -407,6 +445,9 @@ export default function Home() {
                     is_deployed={false}
                     project_link="https://github.com/NimratGrewal/207-project"
                     website_link=""
+                    demo_link=""
+                    has_demo={false}
+                  has_source_code_link={true}
                 />
 
           <ProjectCard
@@ -416,8 +457,11 @@ export default function Home() {
                     tags={["MIPS Assembly language"]} // Tags array
                     image="tet-2.png"
                     is_deployed={false}
-                    project_link=""
+                    project_link="https://github.com/NimratGrewal/Tetris"
                     website_link=""
+                    demo_link=""
+                    has_demo={false}
+                  has_source_code_link={true}
                 />
             <ProjectCard
                     onClick={handleClick}
@@ -428,6 +472,9 @@ export default function Home() {
                     is_deployed={true}
                     project_link="https://github.com/NimratGrewal/currency_converter"
                     website_link="https://nimratgrewal.github.io/currency_converter/"
+                    demo_link=""
+                    has_demo={false}
+                  has_source_code_link={true}
                 />
 
           </div>
