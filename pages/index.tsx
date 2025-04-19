@@ -69,7 +69,7 @@ export default function Home() {
             <div className="relative">
               <img
                 className="h-48 w-36 rounded-full shadow-lg duration-200 transform transition-all border-4 border-neutral-600 dark:border-neutral-600"
-                src={"nimrat_pic.heic"}
+                src={"nimrat_pic.png"}
                 alt="Nimrat"
               />
             </div>
@@ -485,7 +485,7 @@ export default function Home() {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 40,
+                  duration: 5,
                   ease: "linear",
                 },
                 
@@ -559,7 +559,7 @@ export default function Home() {
               is_deployed={false}
               website_link=""
               project_link=""
-              demo_link="https://drive.google.com/drive/folders/1vPP-dmmc6Qv-UlVzycat9WTXPBsCI8xm?usp=share_link"
+              demo_link="https://drive.google.com/drive/folders/1vPP-dmmc6Qv-UlVzycat9WTXPBsCI8xm?usp=sharing"
               has_demo={true}
               has_source_code_link={false}
             />
@@ -586,7 +586,7 @@ export default function Home() {
                   is_deployed={false}
                   project_link="https://github.com/NimratGrewal/AccessConnect"
                   website_link=""
-                  demo_link="https://drive.google.com/drive/folders/1r4TSR7vFAEoyeY9ZiuFJrGsGbqAr9d6G?usp=share_link"
+                  demo_link="https://drive.google.com/drive/folders/1r4TSR7vFAEoyeY9ZiuFJrGsGbqAr9d6G?usp=sharing"
                   has_demo={true}
                   has_source_code_link={true}
               />
