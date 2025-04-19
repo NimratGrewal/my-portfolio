@@ -105,7 +105,7 @@ export default function Home() {
           </motion.div>
 
             
-            <motion.div className="mt-8 flex flex-row justify-center gap-2"
+            <motion.div className="mt-8 flex flex-row justify-center w-full gap-2"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -166,7 +166,7 @@ export default function Home() {
       transition={{ duration: 0.7 }}
       className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 w-full shadow-md md:max-w-4xl">
         {/* Header */}
-        <div className="flex p-5 rounded-t-xl items-center text-sm bg-neutral-600 text-gray-500">
+        <div className="flex p-5 rounded-t-xl items-center w-full text-sm bg-neutral-600 text-gray-500">
           <span className="bg-red-500 h-4 w-4 rounded-full mr-3"></span>
           <span className="bg-yellow-500 h-4 w-4 rounded-full mr-3"></span>
           <span className="bg-green-500 h-4 w-4 rounded-full mr-3"></span>
@@ -180,7 +180,7 @@ export default function Home() {
 
           </div>
 
-        <div className="p-4 pb-6 ">
+        <div className="p-4 pb-6 w-full">
         <code className="text-lg font-semibold leading-relaxed"> 
           <span className="dark:text-blue-400 text-blue-700">const</span>{" "}
           <span className="text-violet-700 dark:text-yellow-300">nimrat_grewal</span>{" "}
