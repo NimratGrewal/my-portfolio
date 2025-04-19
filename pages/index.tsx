@@ -47,14 +47,14 @@ export default function Home() {
     <>
 
     <motion.div
-      className={`min-h-screen w-full min-w-full bg-gray-100 dark:bg-neutral-900`}
+      className={` w-full min-w-full bg-gray-100 dark:bg-neutral-900`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
     
     <Header />
-       <main className="relative z-10 w-full">
+       <main className="relative z-10 w-full min-w-full">
   
 
        <section className="flex mb-10 justify-center items-center bg-gray-100 dark:bg-neutral-900">

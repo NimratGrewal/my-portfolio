@@ -50,15 +50,3 @@ body {
   font-display: "Satoshi", sans-serif;
 }
 
-/* Temporary debugging styles */
-html {
-  border: 2px solid red; /* Visualize html element */
-}
-
-body {
-  border: 2px solid blue; /* Visualize body element */
-}
-
-div[data-debug="root-container"] {
-  border: 2px solid green; /* Visualize root <motion.div> */
-}
