@@ -15,8 +15,31 @@
   }
 }
 
+html, body {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.dark html, .dark body {
+  background-color: #171717; /* bg-neutral-900 */
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Ensure no Tailwind container overrides interfere */
+@layer base {
+  .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -25,4 +48,17 @@ body {
   background: var(--background);
   font-family: "Satoshi", sans-serif;
   font-display: "Satoshi", sans-serif;
+}
+
+/* Temporary debugging styles */
+html {
+  border: 2px solid red; /* Visualize html element */
+}
+
+body {
+  border: 2px solid blue; /* Visualize body element */
+}
+
+div[data-debug="root-container"] {
+  border: 2px solid green; /* Visualize root <motion.div> */
 }
