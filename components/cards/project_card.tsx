@@ -1,15 +1,5 @@
-import { list } from "postcss";
 import React, { ChangeEvent } from "react";
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
-import { motion, useScroll, useTransform } from 'framer-motion';
-
-
-
-import {
-    Ripple,
-    initTWE,
-  } from "tw-elements";
-  
+import { motion} from 'framer-motion';
 
 interface ProjectInputProps {
     title: string;
@@ -121,7 +111,6 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, has_sourc
                         <span
                             key={index}
                             className="px-3 py-1.5 text-sm font-semibold text-zinc-800 dark:text-neutral-100 bg-zinc-300 dark:bg-neutral-700 rounded-lg"
-                            // className="px-4 py-1.5 text-sm bg-neutral-800 text-neutral-200 font-semibold dark:bg-gray-100 dark:text-neutral-800 rounded-full"
                         >
                             {tag}
                         </span>
