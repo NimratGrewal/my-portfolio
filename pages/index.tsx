@@ -57,7 +57,7 @@ export default function Home() {
        <main className="relative z-10 w-full min-w-full">
   
 
-       <section className="flex mb-10 justify-center items-center bg-gray-100 dark:bg-neutral-900">
+       <section className="flex mb-10 justify-center w-full items-center bg-gray-100 dark:bg-neutral-900">
         <div className="grid pt-28 sm:grid-cols-1 lg:grid-cols-2 gap-6 items-center w-full md:max-w-6xl p-6 text-center">
           
           {/* Image Section */}
@@ -249,7 +249,7 @@ export default function Home() {
       </motion.section>
 
 
-      <motion.section className="m-6 bg-gray-100 dark:bg-neutral-900 py-12"
+      <motion.section className="m-6 bg-gray-100 w-full dark:bg-neutral-900 py-12"
       initial={{ opacity: 0, y: 70 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-70px" }}
@@ -402,12 +402,12 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3 }}
-        className="py-12 bg-gray-100 dark:bg-neutral-900"
+        className="py-12 bg-gray-100 w-full dark:bg-neutral-900"
       >
         <h2 className="text-center p-4 text-black dark:text-white text-xl font-bold uppercase m-3">
           familiar technologies
         </h2>
-        <div className="mw-full md:max-w-4xl mx-auto p-6 overflow-hidden"
+        <div className="w-full md:max-w-4xl mx-auto p-6 overflow-hidden"
         style={{
           maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
           WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
@@ -478,8 +478,8 @@ export default function Home() {
       </motion.section>
 
         
-      <section className="bg-gray-100 dark:bg-neutral-900">
-        <div className="flex flex-row justify-center">
+      <section className="bg-gray-100 dark:bg-neutral-900 w-full">
+        <div className="flex flex-row justify-center w-full">
       <h2 className="text-center p-4 text-black uppercase dark:text-white text-xl md:text-xl font-bold leading-relaxed m-3 mt-7">
       Here are some of my projects...
       </h2></div>

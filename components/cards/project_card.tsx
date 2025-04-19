@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, has_sourc
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.5 }}
-        className={`relative flex flex-col mx-auto w-full md:max-w-xl p-6 border-8 dark:border-neutral-600 border-zinc-400 rounded-2xl dark:bg-neutral-800 bg-zinc-200 shadow-lg hover:shadow-xl transition-shadow hover:bg-zinc-100 hover:dark:bg-neutral-900 duration-300 ${className}`}
+        className={`relative flex flex-col mx-auto w-full min-w-full md:max-w-xl p-6 border-8 dark:border-neutral-600 border-zinc-400 rounded-2xl dark:bg-neutral-800 bg-zinc-200 shadow-lg hover:shadow-xl transition-shadow hover:bg-zinc-100 hover:dark:bg-neutral-900 duration-300 ${className}`}
       >
     
             <div className="flex flex-row justify-start gap-4 items-center mb-6 ml-6">
