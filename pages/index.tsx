@@ -54,11 +54,11 @@ export default function Home() {
     >
     
     <Header />
-       <main className="relative z-10">
+       <main className="relative z-10 w-full">
   
 
        <section className="flex mb-10 justify-center items-center bg-gray-100 dark:bg-neutral-900">
-        <div className="grid pt-28 sm:grid-cols-1 lg:grid-cols-2 gap-3 items-center max-w-6xl w-full p-6 text-center">
+        <div className="grid pt-28 sm:grid-cols-1 lg:grid-cols-2 gap-6 items-center w-full md:max-w-6xl p-6 text-center">
           
           {/* Image Section */}
           <motion.div className="flex justify-center"
