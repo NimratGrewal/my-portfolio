@@ -480,12 +480,12 @@ export default function Home() {
           <motion.div
             className="flex"
             animate={{
-              x: ["0%", "-100%"],
+              x: ["-100%", "0%"],
               transition: {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 5,
+                  duration: 8,
                   ease: "linear",
                 },
                 
