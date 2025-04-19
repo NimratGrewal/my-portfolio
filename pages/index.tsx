@@ -47,7 +47,7 @@ export default function Home() {
     <>
 
     <motion.div
-      className={` w-full min-w-full bg-gray-100 dark:bg-neutral-900`}
+      className={`w-full min-w-full bg-gray-100 dark:bg-neutral-900`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -77,7 +77,7 @@ export default function Home() {
 
           {/* Text Section */}
           <motion.div
-            className=""
+            className="w-full"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -105,7 +105,7 @@ export default function Home() {
           </motion.div>
 
             
-            <motion.div className="mt-8 flex flex-row justify-center w-full gap-2"
+            <motion.div className="mt-8 flex flex-row flex-wrap justify-center w-full gap-2"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -244,8 +244,6 @@ export default function Home() {
         </code>
 
         </div>
-        
-
       </motion.section>
 
 
@@ -258,7 +256,7 @@ export default function Home() {
             <h1 className="text-black text-center uppercase dark:text-white text-xl font-bold leading-relaxed mb-8">
               Relevant Experience
             </h1>
-            <div className="mt-8 space-y-8">
+            <div className="mt-8 space-y-8 w-full">
               {/* experience */}
               <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">

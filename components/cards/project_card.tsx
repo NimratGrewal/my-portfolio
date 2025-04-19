@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectInputProps> = ({desc, website_link, has_sourc
         className={`relative flex flex-col mx-auto w-full min-w-full md:max-w-xl p-6 border-8 dark:border-neutral-600 border-zinc-400 rounded-2xl dark:bg-neutral-800 bg-zinc-200 shadow-lg hover:shadow-xl transition-shadow hover:bg-zinc-100 hover:dark:bg-neutral-900 duration-300 ${className}`}
       >
     
-            <div className="flex flex-row justify-start gap-4 items-center w-full overflow-hidden mb-6 ml-6">
+            <div className="flex flex-row flex-wrap justify-start gap-4 items-center w-full mb-6 ml-6">
             {has_source_code_link &&<a
             href={project_link} // Replace with your LinkedIn URL
             target="_blank"
