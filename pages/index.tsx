@@ -47,7 +47,7 @@ export default function Home() {
     <>
 
     <motion.div
-      className={`min-h-screen w-full bg-gray-100 dark:bg-neutral-900`}
+      className={`w-full bg-gray-100 dark:bg-neutral-900`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -164,7 +164,7 @@ export default function Home() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 shadow-md md:max-w-3xl lg:max-w-4xl sm:max-w-2xl">
+      className="m-4 mx-auto rounded-xl border dark:border-neutral-800 border-neutral-400 dark:bg-gray-900 dark:text-gray-200 bg-gray-200 text-gray-900 w-full shadow-md md:max-w-4xl">
         {/* Header */}
         <div className="flex p-5 rounded-t-xl items-center text-sm bg-neutral-600 text-gray-500">
           <span className="bg-red-500 h-4 w-4 rounded-full mr-3"></span>
@@ -254,7 +254,7 @@ export default function Home() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-70px" }}
       transition={{ duration: 0.5 }}>
-          <div className="max-w-4xl mx-auto">
+          <div className=" w-full md:max-w-4xl mx-auto px-4">
             <h1 className="text-black text-center uppercase dark:text-white text-xl font-bold leading-relaxed mb-8">
               Relevant Experience
             </h1>
@@ -407,7 +407,7 @@ export default function Home() {
         <h2 className="text-center p-4 text-black dark:text-white text-xl font-bold uppercase m-3">
           familiar technologies
         </h2>
-        <div className="max-w-4xl mx-auto p-6 overflow-hidden"
+        <div className="mw-full md:max-w-4xl mx-auto p-6 overflow-hidden"
         style={{
           maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
           WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
@@ -484,7 +484,7 @@ export default function Home() {
       Here are some of my projects...
       </h2></div>
         <section className="flex justify-center items-center min-h-screen !z-20">
-          <div className=" grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-14 sm:p-6 lg:p-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full md:max-w-6xl mx-auto p-6">
           <ProjectCard
               onClick={handleClick}
               title="Referral Management Platform"
@@ -595,7 +595,7 @@ export default function Home() {
           <h2 className="text-center p-4 text-black dark:text-white text-xl font-bold uppercase m-3">
             get in touch :p
           </h2>
-          <div className="max-w-4xl mx-auto p-6">
+          <div className="w-full md:max-w-4xl mx-auto p-6">
             <div className="flex flex-col items-center mb-8">
               <p className="text-neutral-800 dark:text-neutral-300 text-base mb-4">
                 Reach out to me directly via email:
