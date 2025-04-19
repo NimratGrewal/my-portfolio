@@ -247,152 +247,219 @@ export default function Home() {
       </motion.section>
 
 
-      <motion.section className="m-6 bg-gray-100 w-full dark:bg-neutral-900 py-12"
-      initial={{ opacity: 0, y: 70 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-70px" }}
-      transition={{ duration: 0.5 }}>
-          <div className=" w-full md:max-w-4xl mx-auto px-4">
-            <h1 className="text-black text-center uppercase dark:text-white text-xl font-bold leading-relaxed mb-8">
-              Relevant Experience
-            </h1>
-            <div className="mt-8 space-y-8 w-full">
-              {/* experience */}
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
-                  <span className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    May 2025 - Present
-                  </span>
-                </div>
-                {/* details */}
-                <div className="lg:w-3/4 mt-3 lg:mt-0">
-                  <div className="flex items-center space-x-4">
-                    <img src="veeva.png" alt="Veeva Systems Logo" className="w-10 h-10 rounded-full shadow-md"/>
-                    <div>
-                      <h2 className="text-black dark:text-white font-semibold text-xl">
-                        Software Engineer Intern
-                      </h2>
-                      <h3 className="text-gray-700 dark:text-gray-400 italic">
-                        Veeva Systems
-                      </h3>
-                    </div>
+      <motion.section
+        initial={{ opacity: 0, y: 70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-70px" }}
+        transition={{ duration: 0.5 }}
+        className="py-12 bg-gray-100 dark:bg-neutral-900"
+      >
+        <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
+          <h1 className="text-black dark:text-white text-center uppercase text-xl md:text-2xl font-bold leading-relaxed mb-12">
+            Relevant Experience
+          </h1>
+          <div className="relative space-y-12">
+            {/* Timeline Line */}
+            <div className="absolute left-6 md:left-1/4 top-0 bottom-0 w-1 bg-pink-400 dark:from-blue-500"></div>
+
+            {/* Experience 1 */}
+            <div className="relative flex flex-col md:flex-row items-start">
+              {/* Timeline Marker */}
+              <div className="absolute left-4 md:left-[calc(25%-0.5rem)] w-5 h-5 bg-pink-400 dark:bg-pink-500 rounded-full border-4 border-gray-100 dark:border-neutral-900"></div>
+              {/* Date */}
+              <div className="md:w-1/4 pl-12 md:pl-0 text-gray-600 dark:text-gray-400 font-semibold">
+                <span className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  May 2025 - Present
+                </span>
+              </div>
+              {/* Details */}
+              <div className="md:w-3/4 mt-4 md:mt-0 md:pl-8">
+                <div className="flex items-center space-x-4 bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <img
+                    src="/veeva.png"
+                    alt="Veeva Systems Logo"
+                    className="w-10 h-10 rounded-full shadow-md object-cover"
+                  />
+                  <div>
+                    <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Software Engineer Intern
+                    </h2>
+                    <h3 className="text-gray-700 dark:text-gray-400 italic">
+                      Veeva Systems
+                    </h3>
                   </div>
                 </div>
               </div>
-
-
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
-                  <span className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    Sept 2024 - April 2025
-                  </span>
-                </div>
-                {/* details */}
-                <div className="lg:w-3/4 mt-3 lg:mt-0">
-                  <div className="flex items-center space-x-4">
-                    <img src="ontario.jpg" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
-                    <div>
-                      <h2 className="text-black dark:text-white font-semibold text-xl">
-                        Software QA Engineer Intern
-                      </h2>
-                      <h3 className="text-gray-700 dark:text-gray-400 italic">
-                        Ontario Ministry of Education
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              {/* experience */}
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
-                  <span className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    May 2023 - Sept 2024
-                  </span>
-                </div>
-                {/* details */}
-                <div className="lg:w-3/4 mt-3 lg:mt-0">
-                  <div className="flex items-center space-x-4">
-                    <img src="toronto.jpg" alt="Unversity of Toronto Logo" className="w-10 h-10 rounded-full shadow-md"/>
-                    <div>
-                      <h2 className="text-black dark:text-white font-semibold text-xl">
-                      Data Science Research Assistant
-                      </h2>
-                      <h3 className="text-gray-700 dark:text-gray-400 italic">
-                        University of Toronto
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-1/4 text-gray-600 dark:text-gray-400 font-semibold">
-                  <span className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    Sept 2023 - Dec 2023
-                  </span>
-                </div>
-                {/* details */}
-                <div className="lg:w-3/4 mt-3 lg:mt-0">
-                  <div className="flex items-center space-x-4">
-                    <img src="oracle.png" alt="Ontario Ministry of Education Logo" className="w-10 h-10 rounded-full shadow-md"/>
-                    <div>
-                      <h2 className="text-black dark:text-white font-semibold text-xl">
-                      Functional Support Analyst Intern
-                      </h2>
-                      <h3 className="text-gray-700 dark:text-gray-400 italic">
-                        Oracle
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
 
+            {/* Experience 2 */}
+            <div className="relative flex flex-col md:flex-row items-start">
+              {/* Timeline Marker */}
+              <div className="absolute left-4 md:left-[calc(25%-0.5rem)] w-5 h-5 bg-pink-400 dark:bg-pink-500 rounded-full border-4 border-gray-100 dark:border-neutral-900"></div>
+              {/* Date */}
+              <div className="md:w-1/4 pl-12 md:pl-0 text-gray-600 dark:text-gray-400 font-semibold">
+                <span className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Sept 2024 - April 2025
+                </span>
+              </div>
+              {/* Details */}
+              <div className="md:w-3/4 mt-4 md:mt-0 md:pl-8">
+                <div className="flex items-center space-x-4 bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <img
+                    src="/ontario.jpg"
+                    alt="Ontario Ministry of Education Logo"
+                    className="w-10 h-10 rounded-full shadow-md object-cover"
+                  />
+                  <div>
+                    <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Software QA Engineer Intern
+                    </h2>
+                    <h3 className="text-gray-700 dark:text-gray-400 italic">
+                      Ontario Ministry of Education
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience 3 */}
+            <div className="relative flex flex-col md:flex-row items-start">
+              {/* Timeline Marker */}
+              <div className="absolute left-4 md:left-[calc(25%-0.5rem)] w-5 h-5 bg-pink-400 dark:bg-pink-500 rounded-full border-4 border-gray-100 dark:border-neutral-900"></div>
+              {/* Date */}
+              <div className="md:w-1/4 pl-12 md:pl-0 text-gray-600 dark:text-gray-400 font-semibold">
+                <span className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  May 2023 - Sept 2024
+                </span>
+              </div>
+              {/* Details */}
+              <div className="md:w-3/4 mt-4 md:mt-0 md:pl-8">
+                <div className="flex items-center space-x-4 bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <img
+                    src="/toronto.jpg"
+                    alt="University of Toronto Logo"
+                    className="w-10 h-10 rounded-full shadow-md object-cover"
+                  />
+                  <div>
+                    <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Data Science Research Assistant
+                    </h2>
+                    <h3 className="text-gray-700 dark:text-gray-400 italic">
+                      University of Toronto
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience 4 */}
+            <div className="relative flex flex-col md:flex-row items-start">
+              {/* Timeline Marker */}
+              <div className="absolute left-4 md:left-[calc(25%-0.5rem)] w-5 h-5 bg-pink-400 dark:bg-pink-500 rounded-full border-4 border-gray-100 dark:border-neutral-900"></div>
+              {/* Date */}
+              <div className="md:w-1/4 pl-12 md:pl-0 text-gray-600 dark:text-gray-400 font-semibold">
+                <span className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Sept 2023 - Dec 2023
+                </span>
+              </div>
+              {/* Details */}
+              <div className="md:w-3/4 mt-4 md:mt-0 md:pl-8">
+                <div className="flex items-center space-x-4 bg-white dark:bg-neutral-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <img
+                    src="/oracle.png"
+                    alt="Oracle Logo"
+                    className="w-10 h-10 rounded-full shadow-md object-cover"
+                  />
+                  <div>
+                    <h2 className="text-black dark:text-white font-semibold text-xl">
+                      Functional Support Analyst Intern
+                    </h2>
+                    <h3 className="text-gray-700 dark:text-gray-400 italic">
+                      Oracle
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-row items-center mt-4 justify-center">
-
-        <a
-          href="https://www.linkedin.com/in/nimrat-grewal-586193193/" // Replace with your LinkedIn URL
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mb-2 mt-4 inline-flex items-center rounded-lg hover:bg-neutral-900 bg-neutral-800 dark:bg-gray-100 dark:hover:bg-gray-200 dark:text-gray-900 text-white px-6 py-2.5 text-sm font-semibold uppercase  transition duration-150 ease-in-out"
-        >
-          For full list of experiences
-          <span className="ml-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16" // Adjust size as needed
-              height="16"
-              viewBox="0 0 50 50"
-              className="inline-block text-white dark:text-black"
-              fill="currentColor"
+          <div className="flex justify-center mt-12">
+            <Link
+              href="https://www.linkedin.com/in/nimrat-grewal-586193193/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-lg dark:bg-gray-200 bg-neutral-800 dark:text-gray-900 text-white text-sm font-semibold px-6 py-2.5 text-sm font-semibold uppercase shadow-lg hover:from-blue-600 hover:to-blue-800 dark:hover:from-blue-700 dark:hover:to-blue-900 hover:shadow-xl transition duration-200"
             >
-              
-              <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
-            </svg>
-          </span>
-        </a>
-
+              Full Experience List
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 50 50"
+                className="inline-block ml-2"
+                fill="currentColor"
+              >
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+              </svg>
+            </Link>
           </div>
+        </div>
       </motion.section>
 
       <motion.section
@@ -418,7 +485,7 @@ export default function Home() {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 20,
+                  duration: 40,
                   ease: "linear",
                 },
                 
